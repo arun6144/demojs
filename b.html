@@ -1,0 +1,35 @@
+ <!<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<div class="main" id="main">
+	<h1>Welcome to Agra</h1>
+</div>
+<div class="main" id="main">
+	<h1>Welcome to Jaipur</h1>
+</div>
+<div class="res" id="res">
+	
+</div>
+</body>
+<script type="text/javascript">
+	var x=document.getElementById("main");
+	var y=document.getElementById("main").innerHTML;
+	//console.log(x);//print whole div
+	//console.log(y);//print only data or tags  consider all as data not tags if there of div via innerHTML
+		//we can change the content by placing data with innerHTML
+	document.getElementById("main").innerHTML="<h1>Arun Pratap Singh</h1>";
+	var a=document.getElementsByClassName("main")[0].innerHTML;
+	console.log(a); //it will print in console Arun Pratap Singh on 0 index
+var b=document.getElementsByClassName("main")[1].innerHTML;
+//alert(b); //it will print in console welcome to jainpur on 1 index and second place
+//ternary operator
+var xx=5;var yy=6; var zz;
+zz=x>y?"yes":"no";
+document.getElementById('res').innerHTML=zz;
+</script>
+</html>

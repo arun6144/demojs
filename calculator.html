@@ -1,0 +1,61 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div>Welcome</div>
+	<label>First Number</label>
+<input type="number" name="first" id="first" style="width:20%; height:7%;">
+<select id="opt" style="width:20%; height:7%; text-align:center; background-color:lightskyblue; border-radius:10px;" >
+	<option>Select Operation</option>
+	<option value="+">+</option>
+	<option value="-">-</option>
+	<option value="*">*</option>
+	<option value="/">/</option>
+</select>
+<label>Second Number</label>
+<input type="number" name="second" id="second" style="width:20%; height:7%;"><br><br>
+<input type="button" onclick="calculate()" name="calculate" value="calculate" style="color: white; background-color:forestgreen; height:35px; width: 95px; border-radius: 5px; border-inline: 11px;">&nbsp&nbsp&nbsp&nbsp
+<input type="text" name="res" id="res" readonly disabled><br><br>
+2)prompt method<br><br>
+Name:<span id="pro"></span><br><br>
+<button id="call" onclick="promptcall()">Prompt</button>
+</body>
+<script type="text/javascript">
+	function calculate(){
+		var first=document.getElementById('first').value;
+				var second=document.getElementById('second').value;
+		var opt=document.getElementById('opt').value;
+//alert(second);
+	if(opt=='+'){
+			//parse int convert text to integer
+		var res=parseInt(first)+parseInt(second);
+	}
+		if(opt=='-'){
+			//parse int convert text to integer
+		var res=parseInt(first)-parseInt(second);
+	}
+		if(opt=='*'){
+			//parse int convert text to integer
+		var res=parseInt(first)*parseInt(second);
+	}
+		if(opt=='/'){
+			//parse int convert text to integer
+		var res=parseInt(first)/parseInt(second);
+	}
+	//alert(res);
+	document.getElementById('res').value=res;
+
+	}
+	function promptcall(){
+
+		var name=prompt("Enter your name");
+		document.getElementById('pro').innerHTML=name;
+		//alert(name);
+		
+	}
+</script>
+</html>

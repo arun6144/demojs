@@ -1,0 +1,31 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<!-- var house=[];
+var house=new array();  -->
+<button onclick="pop()">POP</button>
+<button onclick="push()">PUSH</button>
+
+<span id="res"></span>
+</body>
+<script type="text/javascript">
+	var fruits=["Mango","Apple","Banana","Kela"];
+	var demo=fruits;
+	document.getElementById('res').innerText=demo;
+	//document.write(fruits);
+	function pop(){
+		fruits.pop();
+		//pop will remove last element
+	document.getElementById('res').innerText=demo;
+	}
+	function push(){
+		demo.push(5);
+		document.getElementById('res').innerText=demo;
+	}
+</script>
+</html>
